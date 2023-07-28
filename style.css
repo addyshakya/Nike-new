@@ -1,0 +1,1080 @@
+
+
+@font-face {
+    font-family: bureau;
+    src: url(bureau_grot_condensed_black.ttf);
+}
+
+@font-face {
+    font-family: bureau2;
+    src: url(bureau_grot_black.ttf);
+}
+
+@font-face {
+    font-family: bureau3;
+    src: url(bureau_grot_wide_book.ttf);
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Regular.otf);
+}
+
+@font-face {
+    font-family: monument;
+    src: url(MonumentExtended-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.contant{
+    width:100%;
+    height: 100%;
+    display: none;
+}
+
+.loader{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #386163;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.loader>div{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+div>img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+#first{
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+}
+
+#sales{
+    width: 100%;
+    height: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: black;
+}
+
+#sales>h3{
+    font-family: gilroy;
+    font-size: 1vw;
+    color: white;
+}
+
+#nav{
+    width: 100%;
+    height: 10vh;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 0.3px solid black;
+}
+
+#logo{
+    width: 15%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+#logoimg{
+    width: 50%;
+    height: 90%;
+}
+
+#logoimg>img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+#tags{
+    width: 65%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+#tags>a{
+    letter-spacing: 1px;
+    color: #000;
+    text-decoration: none;
+    font-family: monument;
+}
+
+#tags>a:hover{
+    color: red;
+    /* font-weight: 600; */
+}
+
+#search{
+    width: 20%;
+    height: 100%;
+    /* background: greenyellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+#search>input{
+    padding: 10px 12px;
+}
+
+#search>a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5vw;
+}
+
+#search>a:hover{
+    color: red;
+    font-weight: 600;
+}
+
+#banner{
+    width: 90%;
+    left: 5%;
+    top: 18%;
+    height: 80%;
+    background: yellow;
+    position: absolute;
+}
+
+#div1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #000;
+}
+
+#div1>img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background: #0000003f;
+    position: absolute;
+    z-index: 99;
+}
+
+#overlay>h1{
+    font-family: monument;
+    color: white;
+    font-size: 4.5vw;
+    padding: 10px;
+    letter-spacing: .2vw;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-shadow: 2px 2px black;
+}
+
+#overlay>h3{
+    font-family: monument;
+    color: white;
+    font-size: 3.5vw;
+    padding: 10px;
+    letter-spacing: .2vw;
+    margin-left: 40px;
+    margin-top: -20px;
+    text-shadow: 2px 2px black;
+}
+
+#buttons{
+    width: 25%;
+    height: 55%;
+    margin-left: 40px;
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#buttons>button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    font-family: gilroy;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: black;
+    background: white;
+    border: 1.5px solid black;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+#buttons>button:hover{
+    -webkit-box-shadow: 5px 5px 2px;
+            box-shadow: 5px 5px 2px;
+}
+
+#second{
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#made{
+    width: 100%;
+    height: 50vh;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#made>h1{
+    font-size: 6vw;
+    font-family: bureau;
+    line-height: 65px;
+}
+
+#made>h3{
+    font-size: 1vw;
+    font-family: bureau3;
+    margin-top: 15px;
+}
+
+#made>button{
+    padding: 10px 42px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: monument;
+    margin-top: 20px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+#made>button:hover{
+    -webkit-box-shadow: 5px 5px 3px black;
+            box-shadow: 5px 5px 3px black;
+}
+
+#newarrival{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+}
+
+#headings{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#headings>h2{
+    margin-left: 20px;
+    font-family: bureau;
+}
+
+    #blocks{
+        width: 100%;
+        height: 50vh;
+        position: absolute;
+        top: 10vh;
+        margin-left: 1vw;
+        z-index: 999;
+    }
+
+     .swiper {
+     width: 100%;
+     height: 100%;
+   }
+
+   .swiper-slide {
+    width: 30%;
+       height: 40vh;
+     text-align: center;
+     background: #fff;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+   }
+
+   .swiper-slide img {
+     display: block;
+     width: 100%;
+     height: 100%;
+     -o-object-fit: cover;
+        object-fit: cover;
+   }
+
+    #simg{
+       width: 100%;
+       height: 80%;
+     }
+
+     #simg>img{
+       width: 100%;
+       height: 100%;
+       -o-object-fit: cover;
+          object-fit: cover;
+     }
+
+     #price{
+       width: 100%;
+       height: 20%;
+       background: white;
+     }
+
+     #price>h3{
+       font-family: bureau;
+       margin-left: .5vw;
+       margin-top: 10px;
+       position: absolute;
+       white-space: nowrap;
+     }
+
+     #price>h4{
+       font-family: gilroy;
+       color: grey;
+       margin-top: 30px;
+       margin-left: .5vw;
+       position: absolute;
+       white-space: nowrap;
+     }
+
+     #price>h5{
+       margin-left: 10vw;
+       margin-top: -25px;
+       position: absolute;
+       font-family: monument;
+     }
+
+#third{
+    top: 200%;
+    width: 100%;
+    height: 130%;
+    position: absolute;
+}
+
+
+#collabrotion{
+    width: 100%;
+    height: 70vh;
+    top: 13%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#Jimg{
+    width: 100vw;
+    height: 100%;
+}
+
+#Jimg>img{
+    width: 100%;
+    height: 140%;
+}
+
+#overlay1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00000036;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+#overlay1>h1{
+    color: white;
+    font-size: 6vw;
+    font-family: bureau;
+}
+
+#cimg{
+    width: 25vw;
+    height: 100%;
+}
+
+#cimg>img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+#details{
+    width: 75vw;
+    height: 100%;
+    right: 0%;
+    position: absolute;
+    background: #0A3FA8;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+
+#whatyou{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    position: absolute;
+    width: 80%;
+    height: 30%;
+    top: 25%;
+}
+
+#whatyou>h3{
+    padding: 1px 5px;
+    background: white;
+    position: absolute;
+    font-family: bureau;
+    font-size: 5vw;
+    font-weight: 900;
+    color: black;
+}
+
+#you{
+    position: absolute;
+    top: 48%;
+    rotate: -10deg;
+}
+
+#got{
+    position: absolute;
+    top: 48%;
+    margin-left: 7.8vw   
+}
+
+#ti{
+    width: 73%;
+    height: 100%;
+    right: 0%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+#ti>h1{
+    font-family: gilroy;
+    font-size: 3vw;
+}
+
+#details>h3{
+    margin-top: 200px;
+    font-family: bureau;
+    font-size: 2vw;
+    letter-spacing: 1px;
+}
+
+#shop{
+    padding: 10px 32px;
+    margin-top: 5px;
+    border: none;
+    background: #000;
+    color: white;
+    font-family: gilroy;
+    font-weight: 400;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+#shop:hover{
+    -webkit-box-shadow: 5px 5px 3px white;
+            box-shadow: 5px 5px 3px white;
+}
+
+#footer{
+    width: 100%;
+    height: 43vh;
+    background: black;
+    bottom: 0%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#fo{
+    width: 20%;
+    height: 100%;
+    /* background: red; */
+}
+
+#fo>h3{
+    cursor: pointer;
+    font-size: 1.2vw;
+    font-family: bureau;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2vw;
+    margin-top: 5vh;
+}
+
+#fo>h2{
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1vw;
+    font-family: bureau;
+    color: white;
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+}
+
+#fo>h4{
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: .9vw;
+    font-family: bureau;
+    color: grey;
+    margin-top: 1.5vh;
+    font-weight: 300;
+    margin-left: 2vw;
+}
+
+#fo>h4:hover{
+    color: white;
+}
+
+#social{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 10vh;
+    /* background: red; */
+}
+
+#icons{
+    cursor: pointer;
+    width: 3vw;
+    height: 3vw;
+    background: white;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 2.2vw;
+    -webkit-transition: .5s all ease;
+    -o-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#icons:hover{
+    color: white;
+    background: #000;
+}
+
+#main2{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: none;
+    position: relative;
+}
+
+#main3{
+    height: 100%;
+    width: 100%;
+    background: yellowgreen;
+    display: none;
+    position: relative;
+}
+
+#videos{
+    width: 100%;
+    height: 50vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    bottom: 105%;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    position: absolute;
+}
+#headings1{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 999;
+    top: 0%;
+}
+
+#headings1>h2{
+    margin-left: 20px;
+    font-family: bureau;
+}
+
+#bl{
+    margin-top: 60px;
+    height: 100%;
+}
+
+#offers{
+    width: 100%;
+    height: 23vh;
+    background: #0A3FA8;
+    top: 115%;
+    position: absolute;
+}
+
+#offers>h3{
+    color: white;
+    font-size: 4vw;
+    font-family: bureau2;
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
+
+#offers>h5{
+    margin-left: 1vw;
+    font-family: gilroy;
+    font-size: 1vw;
+    color: white;
+}
+
+#offers>button{
+    padding: 10px 22px ;
+    background: white;
+    color: black;
+    -webkit-transition: .4s ease all;
+    -o-transition: .4s ease all;
+    transition: .4s ease all;
+    margin-top: 1vw;
+    border: none;
+    font-weight: 800;
+    margin-left: 1vw
+}
+
+#offers>button:hover{
+    -webkit-box-shadow: 10px 5px 2px black;
+            box-shadow: 10px 5px 2px black;
+
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    #first{
+        height: 75%;
+        /* background: #000; */
+    }
+    #sales>h3{
+        font-size: 2.3vw;
+    }
+
+    #logoimg{
+        width: 80%;
+        height: 60%;
+    }
+
+    #tags>a{
+        font-size: 1.5vw;
+    }
+
+    #search>a{
+        font-size: 5.5vw;
+    }
+
+    #search>input{
+        display: none;
+    }
+
+    #banner{
+        top: 23%;
+        height: 65%;
+    }
+
+    #overlay{
+        background: transparent;
+    }
+
+    #overlay>h1{
+        font-size: 7.5vw;
+    }
+
+    #overlay>h3{
+        font-size: 5.5vw;
+    }
+
+    #buttons{
+        width: 60%;
+        margin-left: 20px;
+        margin-top: -10px;
+        height: 40%;
+        bottom: 0%;
+        position: absolute;
+    }
+
+    #buttons>button{
+        margin-top: -2px;
+        padding: 5px 15px;
+    }
+
+    #made{
+        position: absolute;
+        top: -10%;
+    }
+
+    #made>h1{
+    font-size: 14vw;
+    line-height: 49px;
+    }
+
+    #made>h3{
+        font-size: 4vw;
+        margin-top: 23px;
+    }
+
+    #made>button{
+        padding: 11px 70px;
+        margin-top: 25px;
+    }
+
+    #newarrival{
+        top: 40%;
+    }
+
+    #second{
+        top: 75%;
+    }
+
+    .swiper-slide element.style {
+        width: 200px;
+    }
+
+    #third{
+        top: 177%;
+        height: 140%;
+    }
+
+    #collabrotion{
+        top: 6.5%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #cimg{
+        width: 100vw;
+        z-index: 999;
+    }
+
+    #details{
+        position: absolute;
+        bottom: -42%;
+        width: 100%;
+        height: 35vh;
+    }
+
+    #whatyou>h3{
+        font-size: 9vw;
+        padding: 2px 6px;
+    }
+
+    #what{
+        margin-top: -1%;
+        position: absolute
+    }
+
+
+    #you{
+        top: 47%;
+    }
+
+    #got{
+        margin-left: 15vw;
+    }
+
+    #ti>h1{
+        font-size: 3.2vw;
+        margin-left: 13vw;
+    }
+
+    #footer{
+        height: 27vh;
+    }
+
+    #details>h3{
+        margin-top: 170px;
+        font-size: 5vw;
+    }
+
+    #fo>h3{
+        font-size: 2.3vw;
+    }
+
+    #fo>h2{
+        font-size: 1.65vw;
+    }
+
+    #fo>h4{
+        font-size: 2vw;
+    }
+
+    #overlay1>h1{
+        font-size: 9vw;
+        color: black;
+    }
+
+    #overlay1{
+        background: transparent;
+        top: 50%;
+    }
+
+    #overlay1>h3{
+        text-align: center;
+        font-size: 4vw;
+        font-family: gilroy;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    #Jimg{
+        overflow: hidden;
+    }
+
+    #Jimg>img{
+        height: 70%;
+        width: 200%;
+    }
+
+    #videos{
+        width: 100%;
+        height: 50vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        bottom: 96%;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+        position: absolute;
+    }
+    
+    #blocks{
+        margin-top: -10px;;
+    }
+
+    #price>h3{
+        margin-left: 3vw;
+    }
+
+    #headings1{
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        z-index: 999;
+        top: 0%;
+    }
+    
+    #headings1>h2{
+        margin-left: 20px;
+        font-family: bureau;
+    }
+
+    #bl{
+        margin-top: 60px;
+        height: 100%;
+    }
+
+    #offers{
+        height: 15vh;
+        top: 108%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #offers>h3{
+        font-size: 7vw;
+    }
+
+    #offers>h5{
+        font-size: 3.5vw;
+    }
+
+}
