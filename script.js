@@ -5,6 +5,8 @@ function loader(){
     });
 }
 
+loader();
+
 
 document.querySelector('#Men').addEventListener('click', function(){
     loader()
